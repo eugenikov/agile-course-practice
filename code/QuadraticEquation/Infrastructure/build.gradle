@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':QuadraticEquation-ViewModel')
+    testCompile project(':QuadraticEquation-ViewModel').sourceSets.test.output
+}

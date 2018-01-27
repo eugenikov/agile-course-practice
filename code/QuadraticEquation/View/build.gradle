@@ -1,0 +1,6 @@
+apply from:   rootDir.getAbsolutePath() + '/config/scripts/javafx.plugin'
+
+dependencies {
+    compile project(':QuadraticEquation-ViewModel')
+    compile project(':QuadraticEquation-Infrastructure')
+}

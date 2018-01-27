@@ -122,13 +122,14 @@ project(":code/accounting-finances").name = "accounting-finances"
 
 
 // Reshetova Anastasya
-include "code/quadratic-equation/Model"
-project(":code/quadratic-equation/Model").name = "quadratic-equation-Model"
-include "code/quadratic-equation/View"
-project(":code/quadratic-equation/View").name = "quadratic-equation-View"
-include "code/quadratic-equation/ViewModel"
-project(":code/quadratic-equation/ViewModel").name = "quadratic-equation-ViewModel"
-
+include "code/QuadraticEquation/Model"
+project(":code/QuadraticEquation/Model").name = "QuadraticEquation-Model"
+include "code/QuadraticEquation/View"
+project(":code/QuadraticEquation/View").name = "QuadraticEquation-View"
+include "code/QuadraticEquation/ViewModel"
+project(":code/QuadraticEquation/ViewModel").name = "QuadraticEquation-ViewModel"
+include "code/QuadraticEquation/Infrastructure"
+project(":code/QuadraticEquation/Infrastructure").name = "QuadraticEquation-Infrastructure"
 
 // Rozanov Anatoliy
 include "code/numbers-in-words/Model"
