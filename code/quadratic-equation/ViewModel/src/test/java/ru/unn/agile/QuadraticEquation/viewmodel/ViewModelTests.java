@@ -246,7 +246,7 @@ public class ViewModelTests {
         viewModel.cProperty().set("0.00005");
         viewModel.solve();
         assertTrue(viewModel.getSolution().contains("1"));
-        assertTrue(viewModel.getSolution().contains("0.00005"));
+        assertTrue(viewModel.getSolution().contains("0,00005"));
     }
 
     @Test

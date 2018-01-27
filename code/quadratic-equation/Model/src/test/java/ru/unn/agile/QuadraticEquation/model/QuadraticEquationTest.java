@@ -190,8 +190,8 @@ public class QuadraticEquationTest {
         List<String> result = new ArrayList<String>();
         equation.setABC(-1, -4, 3.3);
         result = equation.solveQuadraticEquation();
-        assertTrue(result.contains("0.70186"));
-        assertTrue(result.contains("-4.70186"));
+        assertTrue(result.contains("0,70186"));
+        assertTrue(result.contains("-4,70186"));
     }
 
     @Test

@@ -15,7 +15,7 @@ public class FormatterTests {
     @Test
     public void canFormat() {
         double x = 1.543;
-        assertEquals("1.543", Formatter.formatPositiveDouble(x));
+        assertEquals("1,543", Formatter.formatPositiveDouble(x));
     }
 
     @Test
@@ -27,13 +27,13 @@ public class FormatterTests {
     @Test
     public void canConvertFloatingComplexNumberToString() {
         Complex z = new Complex(3.14, 2);
-        assertEquals("3.14 + 2i", z.toString());
+        assertEquals("3,14 + 2i", z.toString());
     }
 
     @Test
     public void canConvertScientificFormatToString() {
         Complex z = new Complex(1, 1.2456e-2);
-        assertEquals("1 + 0.01246i", z.toString());
+        assertEquals("1 + 0,01246i", z.toString());
     }
 
     @Test
