@@ -1,7 +1,5 @@
 package ru.unn.agile.QuadraticEquation.Infrastructure;
 
-import ru.unn.agile.QuadraticEquation.ViewModel.ILogger;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -11,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+
+import ru.unn.agile.QuadraticEquation.ViewModel.ILogger;
 
 public class TxtLogger implements ILogger {
 

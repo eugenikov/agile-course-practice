@@ -1,26 +1,24 @@
 package ru.unn.agile.QuadraticEquation.View;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.beans.value.ChangeListener;
+import javafx.fxml.FXML;
+
 import java.util.regex.Pattern;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.function.UnaryOperator;
-
-import javafx.beans.value.ChangeListener;
-
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
-
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-
 import java.util.Calendar;
-import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import javafx.fxml.FXML;
 import ru.unn.agile.QuadraticEquation.Infrastructure.TxtLogger;
 import ru.unn.agile.QuadraticEquation.ViewModel.ViewModel;
+
+import java.text.SimpleDateFormat;
 
 public class Solution {
 

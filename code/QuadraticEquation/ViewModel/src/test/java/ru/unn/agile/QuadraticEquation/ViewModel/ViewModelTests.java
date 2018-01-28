@@ -1,13 +1,13 @@
 package ru.unn.agile.QuadraticEquation.ViewModel;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 public class ViewModelTests {
     private ViewModel viewModel;
@@ -41,7 +41,7 @@ public class ViewModelTests {
     }
 
     @Test
-    public void logContainMessageAfterSolve() {
+    public void logContainsMessageAfterSolve() {
         setInputData();
         viewModel.solve();
         String message = viewModel.getLog().get(0);
@@ -57,13 +57,22 @@ public class ViewModelTests {
     }
 
     @Test
-    public void logIsWroteAfterFirstInput() {
+    public void logIsWrittenAfterFirstInput() {
         viewModel.aProperty().set("1");
 
         viewModel.onFocusChanged(Boolean.TRUE, Boolean.FALSE);
         String message = viewModel.getLog().get(0);
         assertTrue(message.matches(".*" + ViewModel.LogMessages.EDITING_FINISHED
                 + "Input arguments are: a = 1; b = ; c = ."));
+    }
+
+    @Test
+    public void logIsCorrectAfterSolveWithOnlyACoefficient() {
+        viewModel.aProperty().set("1");
+
+        viewModel.solve();
+        String message = viewModel.getLog().get(0);
+        assertTrue(message.matches(".*Arguments: a = 1; b = 0; c = 0."));
     }
 
     @Test

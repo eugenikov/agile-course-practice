@@ -1,6 +1,5 @@
 package ru.unn.agile.QuadraticEquation.ViewModel;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
