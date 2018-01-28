@@ -72,7 +72,9 @@ public class ViewModelTests {
 
         viewModel.solve();
         String message = viewModel.getLog().get(0);
-        assertTrue(message.matches(".*Arguments: a = 1; b = 0; c = 0."));
+        assertTrue(message.matches(".*" + ViewModel.LogMessages.SOLVE_WAS_PRESSED
+                + "Root1 = " + viewModel.getFirstRoot() + ", Root2 = " + viewModel.getSecondRoot()
+                + ". Arguments: a = 1; b = 0; c = 0."));
     }
 
     @Test
